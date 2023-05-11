@@ -2,6 +2,8 @@
 
 set -eux
 
+exit 0
+
 export PATH=/root/bin:$PATH
 
 mkdir /root/bin
