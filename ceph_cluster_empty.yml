@@ -34,6 +34,7 @@ parameters:
  disks: {{ disks }}
  pool: {{ pool }}
  cmds:
+ - dnf -y install python3 chrony lvm2 podman
  - sed -i "s/SELINUX=enforcing/SELINUX=permissive/" /etc/selinux/config
  - setenforce 0
 {% endfor %}
